@@ -48,8 +48,8 @@ public function index(Request $request)
     public function create()
     {
 
-        /*$puc = Puc::orderBy('nro_cuenta', 'ASC')->where('estado', 1)->get();
-        dd($puc);
+        $puc = Puc::orderBy('nro_cuenta', 'ASC')->where('estado', 1)->get();
+        //dd($puc);
         //$pacientes = User::where('tipo', '!=', 'medico')->orderBy('id', 'ASC')->lists('nombre', 'id');
 
         $array_puc = array();
@@ -59,7 +59,7 @@ public function index(Request $request)
         }
 
         $puc = Puc::orderBy('nro_cuenta', 'ASC')->lists('nombre_cuenta', 'nro_cuenta');
-        return view('pagina.transaccion.create')->with('puc', $array_puc);*/
+        return view('pagina.transaccion.create')->with('puc', $array_puc);
     }
 
     /**
