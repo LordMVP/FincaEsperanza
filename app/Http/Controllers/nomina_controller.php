@@ -34,8 +34,6 @@ class nomina_controller extends Controller
             $nominas[$i]->nombre = $user_aux->nombre . ' ' . $user_aux->apellido;
         }
 
-        
-
         return view('pagina.nomina.nomina')->with('nominas', $nominas)->with('usuarios', $usuarios);
     }
 
