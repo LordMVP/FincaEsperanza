@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace FincaEsperanza\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

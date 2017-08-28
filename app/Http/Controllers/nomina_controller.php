@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FincaEsperanza\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use App\User;
+use FincaEsperanza\Http\Requests;
+use FincaEsperanza\Http\Controllers\Controller;
+use FincaEsperanza\User;
 use DB;
-use App\nomina;
+use FincaEsperanza\nomina;
 use Laracasts\Flash\Flash;
 use Illuminate\Support\Facades\Redirect;
-use App\cuentas_nomina;
+use FincaEsperanza\cuentas_nomina;
 
 class nomina_controller extends Controller
 {

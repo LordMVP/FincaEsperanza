@@ -4,6 +4,13 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.h-scroll {
+    height: 90vh; /* %-height of the viewport */
+    position: fixed;
+    overflow-y: scroll;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

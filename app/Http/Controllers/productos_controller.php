@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FincaEsperanza\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use App\productos;
+use FincaEsperanza\Http\Requests;
+use FincaEsperanza\Http\Controllers\Controller;
+use FincaEsperanza\productos;
 use DB;
 
 class productos_controller extends Controller
