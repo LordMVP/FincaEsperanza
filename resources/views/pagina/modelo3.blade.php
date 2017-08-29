@@ -3,7 +3,7 @@
 @section('titulo', 'Modelo')
 
 @section('js1')
-<script src="{{ asset('plugin/simplex/simplex.js') }}">
+<script src="{{ asset('plugin/simplex/simplex.jsaa') }}">
 </script>
 <script type="text/javascript">
    var variables;
@@ -47,7 +47,7 @@
 
 {!! Form::open(['id' => 'formulario_modelo', 'method' => 'POST', 'files' => true]) !!}
 <div class="row text-left">
-   <div class="col-md-1">
+   <div class="col-md-2">
    </div>
    <div class="col-md-4">
       <div class="box box-danger">
@@ -149,7 +149,7 @@
 </div>
 <!-- /.box -->
 </div>
-<div class="col-md-7">
+<div class="col-md-4">
    <div class="box box-danger">
       <div class="box-header">
          <h3 class="box-title">
@@ -157,9 +157,9 @@
          </h3>
       </div>
       <div class="box-body" >
-         <div id="jmodelo" style="overflow-y: scroll; overflow-x: none;">
+         <div id="jmodelo" style="overflow-y: scroll;">
             <font color="#000000" face="Verdana" size="2">
-               <table>
+               <table class='h-scroll'>
                   <tbody>
                      <tr>
                         <td>
@@ -289,8 +289,8 @@
                   <label>
                      Función
                   </label>
-                  <div class="form-group" style="overflow-y: scroll; overflow-x: none;">
-                     <div class="input-group" id="idgridproblema" >
+                  <div class="form-group">
+                     <div class="input-group" id="idgridproblema" style="width: 500px;">
                         <table class="input-group-addon" class='h-scroll'>
                            <tbody>
                               <tr>
@@ -386,7 +386,7 @@
             </div>
          </div>
          <div class="row">
-            <div class="col-md-12" id="jsolucion">
+            <div class="col-md-12" id="jsolucion" style="overflow-y: scroll;">
                <h2>
                   Solución
                </h2>
@@ -661,7 +661,7 @@ s= s +"</tr>";
 s= s + "</table>Xi>=0<input style='display:none;' type='checkbox' name='chkiteraciones' value='OFF' id='chkiteraciones'>";
 s= s + "";
 //s= s+"<div></div>";   
-document.getElementById('jmodelo').innerHTML=s;
+//document.getElementById('jmodelo').innerHTML=s;
 //document.getElementById("jmodelo").style.overflow-y = "scroll"; //overflow-y: scroll;
 
 //$("#jmodelo").attr("overflow", "scroll")

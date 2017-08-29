@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace FincaEsperanza;
 
 use Illuminate\Database\Eloquent\Model;
 

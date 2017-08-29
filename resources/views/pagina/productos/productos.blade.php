@@ -16,7 +16,7 @@
         </h3>
     </div>
 </div>
-<a class="btn btn-info" href=" {{ route('variables.create') }} ">
+<a class="btn btn-info" href=" {{ route('productos.create') }} ">
     Nuevo Producto
 </a>
 <hr>
@@ -50,16 +50,16 @@
                             @for ($i = 0; $i < count($productos); $i++)
                             <tr class="odd gradeX">
                                 <td>
+                                    {{ $productos[$i]->name }}
+                                </td>
+                                <td>
                                     {{ $productos[$i]->nombre }}
                                 </td>
                                 <td>
-                                    {{ $productos[$i]->categoria }}
+                                    {{ $productos[$i]->price }}
                                 </td>
                                 <td>
-                                    {{ $productos[$i]->precio }}
-                                </td>
-                                <td>
-                                    {{ $productos[$i]->precio_stock }}
+                                    {{ $productos[$i]->wholesale_price }}
                                 </td>
                                 <td>
                                     <a class="glyphicon glyphicon-pencil btn btn-info" href=" {{ route('productos.edit', $productos[$i]->id_product) }} ">
