@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FincaEsperanza\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use FincaEsperanza\Http\Requests;
+use FincaEsperanza\Http\Controllers\Controller;
 use DB;
 use Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -82,7 +82,7 @@ class estadisticas_controller extends Controller
         $sql .= "select more.*, mode.nombre from modelo mode inner join modelo_resultado more on mode.id_modelo = more.id_modelo ";
         $sql .= "where more.variable like '%x%' or more.variable like '%z%' order by more.variable  ";
         $sql .= ") datos ";
-        $sql .= "where  datos.id_modelo = 21 ";
+        $sql .= "where  datos.id_modelo = 24 ";
         $sql .= "order by datos.id_modelo, datos.id_mode_resultado";
 
         $variables = DB::select($sql);

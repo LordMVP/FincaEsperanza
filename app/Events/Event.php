@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace FincaEsperanza\Events;
 
 abstract class Event
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FincaEsperanza\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mail;
 use Session;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use FincaEsperanza\Http\Requests;
+use FincaEsperanza\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
 use Laracasts\Flash\Flash;
-use App\User;
+use FincaEsperanza\User;
 
 class mail_controller extends Controller
 {
