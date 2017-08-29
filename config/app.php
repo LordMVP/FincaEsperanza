@@ -140,10 +140,10 @@ return [
         /*
          * Application Service Providers...
          */
-        FincaEsperanza\Providers\AppServiceProvider::class,
-        FincaEsperanza\Providers\AuthServiceProvider::class,
-        FincaEsperanza\Providers\EventServiceProvider::class,
-        FincaEsperanza\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
 
         Collective\Html\HtmlServiceProvider::class, 

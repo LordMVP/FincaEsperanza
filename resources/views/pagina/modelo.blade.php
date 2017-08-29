@@ -47,7 +47,7 @@
 
 {!! Form::open(['id' => 'formulario_modelo', 'method' => 'POST', 'files' => true]) !!}
 <div class="row text-left">
-   <div class="col-md-1">
+   <div class="col-md-2">
    </div>
    <div class="col-md-4">
       <div class="box box-danger">
@@ -149,15 +149,15 @@
 </div>
 <!-- /.box -->
 </div>
-<div class="col-md-7">
+<div class="col-md-4">
    <div class="box box-danger">
       <div class="box-header">
          <h3 class="box-title">
             Matriz Estandar
          </h3>
       </div>
-      <div class="box-body" >
-         <div id="jmodelo" style="overflow-y: scroll; overflow-x: none;">
+      <div class="box-body">
+         <div id="jmodelo">
             <font color="#000000" face="Verdana" size="2">
                <table>
                   <tbody>
@@ -289,9 +289,9 @@
                   <label>
                      Función
                   </label>
-                  <div class="form-group" style="overflow-y: scroll; overflow-x: none;">
-                     <div class="input-group" id="idgridproblema" >
-                        <table class="input-group-addon" class='h-scroll'>
+                  <div class="form-group">
+                     <div class="input-group" id="idgridproblema" style="width: 500px;">
+                        <table class="input-group-addon">
                            <tbody>
                               <tr>
                                  <td>
@@ -390,7 +390,7 @@
                <h2>
                   Solución
                </h2>
-               <table class='h-scroll'>
+               <table>
                   <th>
                      <td>
                         Z
@@ -500,7 +500,7 @@
               objetivo=0;
            }    
            s=s+"Introduzca los coeficientes del problema:";       
-           s= s+"<table bordercolor='#FFFFFF' class='h-scroll'> ";
+           s= s+"<table bordercolor='#FFFFFF'>";
            s= s+"<tr>";
            s= s+"<td></td>";
            for (i=1; i<=novariables; i++)
@@ -549,7 +549,6 @@
    $('#btnsolucionar').attr('disabled', false)
    s= s+"</table>";
    document.getElementById("idgridproblema").innerHTML= s;          
-   ///$('#jmodelo').attr('overflow', "scroll")
 }
 
 function jmodelo()
@@ -575,7 +574,7 @@ function jmodelo()
  }    
 
  s="<font face='Verdana' size='2' color='#000000'>";
- s= s + "<table class='h-scroll'";
+ s= s + "<table>";
  s= s + "<tr>";
  s= s + "<td><B>"+objetivo+" Z = </B></td>";
 
@@ -662,9 +661,6 @@ s= s + "</table>Xi>=0<input style='display:none;' type='checkbox' name='chkitera
 s= s + "";
 //s= s+"<div></div>";   
 document.getElementById('jmodelo').innerHTML=s;
-//document.getElementById("jmodelo").style.overflow-y = "scroll"; //overflow-y: scroll;
-
-//$("#jmodelo").attr("overflow", "scroll")
 }
 function resolver()
 {

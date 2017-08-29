@@ -1,9 +1,9 @@
 <?php
 
-namespace FincaEsperanza\Http\Controllers;
+namespace App\Http\Controllers;
 
-use FincaEsperanza\Http\Controllers\Controller;
-use FincaEsperanza\User;
+use App\Http\Controllers\Controller;
+use App\User;
 use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;

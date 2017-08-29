@@ -1,17 +1,17 @@
 <?php
 
-namespace FincaEsperanza\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use FincaEsperanza\Http\Requests;
-use FincaEsperanza\Http\Controllers\Controller;
-use FincaEsperanza\User;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use App\User;
 use DB;
-use FincaEsperanza\nomina;
+use App\nomina;
 use Laracasts\Flash\Flash;
 use Illuminate\Support\Facades\Redirect;
-use FincaEsperanza\cuentas_nomina;
+use App\cuentas_nomina;
 
 class nomina_controller extends Controller
 {
@@ -33,6 +33,8 @@ class nomina_controller extends Controller
             //dd($nominas[$i]->cedula);
             $nominas[$i]->nombre = $user_aux->nombre . ' ' . $user_aux->apellido;
         }
+
+        
 
         return view('pagina.nomina.nomina')->with('nominas', $nominas)->with('usuarios', $usuarios);
     }

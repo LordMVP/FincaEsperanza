@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => FincaEsperanza\User::class,
+    'model' => App\User::class,
 
     /*
     |--------------------------------------------------------------------------
