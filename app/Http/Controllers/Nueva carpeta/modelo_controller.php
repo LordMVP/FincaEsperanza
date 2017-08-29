@@ -1,8 +1,8 @@
 <?php
 
-namespace FincaEsperanza\Http\Controllers;
+namespace App\Http\Controllers;
 
-use FincaEsperanza\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 
@@ -17,7 +17,7 @@ class modelo_controller extends Controller
 
     public function index()
     {
-        //return view('pagina.modelo');
+        return view('pagina.modelo');
     }
 
     /**

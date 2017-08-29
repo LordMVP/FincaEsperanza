@@ -1,15 +1,15 @@
 <?php
 
-namespace FincaEsperanza\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use FincaEsperanza\User;
+use App\User;
 use Validator;
-use FincaEsperanza\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 use Illuminate\Http\Request;
-use FincaEsperanza\Http\Requests;
+use App\Http\Requests;
 use Illuminate\Support\Facades\Redirect;
 use Laracasts\Flash\Flash;
 

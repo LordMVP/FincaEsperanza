@@ -1,18 +1,18 @@
 <?php
 
-namespace FincaEsperanza\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use FincaEsperanza\Http\Requests;
-use FincaEsperanza\Http\Controllers\Controller;
-use FincaEsperanza\User;
-use FincaEsperanza\Puc;
-use FincaEsperanza\Transaccion;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use App\User;
+use App\Puc;
+use App\Transaccion;
 use Laracasts\Flash\Flash;
 use Storage;
 use Illuminate\Support\Facades\Redirect;
-use FincaEsperanza\Http\Requests\user_request;
+use App\Http\Requests\user_request;
 use Auth;
 use DB;
 
